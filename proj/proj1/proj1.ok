@@ -1,15 +1,15 @@
 {
-  "name": "Project 1",
-  "endpoint": "cal/ds100/fa17/proj1",
-  "src": [
-    "proj1_master.ipynb"
-  ],
-  "tests": {
-      "ok_tests/q*.py": "ok_test"
-  },
-  "protocols": [
-      "file_contents",
-      "grading",
-      "backup"
-  ]
+    "endpoint": "cal/ds100/fa17/proj1",
+    "name": "Project 1",
+    "protocols": [
+        "file_contents",
+        "grading",
+        "backup"
+    ],
+    "src": [
+        "proj1.ipynb"
+    ],
+    "tests": {
+        "ok_tests/q*.py": "ok_test"
+    }
 }
