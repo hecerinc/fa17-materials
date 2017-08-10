@@ -1,18 +1,16 @@
 test = {
-  'name': 'Question 2c',
+  'name': 'Question 1c',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(job_spread, Table)
+          >>> double100([3, 3, 100, 100]) == True
           True
-          >>> job_spread.num_columns == 2
+          >>> double100([5, 2, 5, 2]) == False
           True
-          >>> job_spread.num_rows == 1058
-          True
-          >>> np.allclose(job_spread.column(1).mean(), 88415.3155)
+          >>> double100([4, 2, 4, 100, 100, 5]) == True
           True
           """,
           'hidden': False,
