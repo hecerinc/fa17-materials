@@ -7,7 +7,7 @@
         "backup"
     ],
     "src": [
-        "proj1.ipynb"
+        "hw1.ipynb"
     ],
     "tests": {
         "ok_tests/q*.py": "ok_test"
