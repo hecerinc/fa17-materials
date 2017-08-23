@@ -1,6 +1,6 @@
 {
-    "endpoint": "cal/ds100/fa17/proj1",
-    "name": "Project 1",
+    "endpoint": "cal/ds100/fa17/hw1",
+    "name": "Homework 1",
     "protocols": [
         "file_contents",
         "grading",
