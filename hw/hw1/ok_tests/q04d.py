@@ -1,13 +1,13 @@
 test = {
-  'name': 'Question 3b',
+  'name': 'Question 4d',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> np.linalg.inv(A @ B) @ np.array([80, 80, 100])
-          array([ 5.5       ,  2.20833333,  1.        ])
+          >>> np.allclose(A @ B @ new_v, np.array([80, 80, 100]))
+          True
           """,
           'hidden': False,
           'locked': False
