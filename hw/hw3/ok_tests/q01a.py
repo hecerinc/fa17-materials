@@ -8,7 +8,7 @@ test = {
           'code': r"""
           >>> isinstance(bike, pd.DataFrame)
           True
-          >>> bike.shape == (17379, 17)
+          >>> bike.shape == (17379, 17) or bike.shape == (17379, 18)
           True
           >>> bike['holiday'].dtype == np.dtype('O')
           True
