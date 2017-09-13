@@ -12,7 +12,7 @@ test = {
           True
           >>> bike['weathersit'].dtype == np.dtype('O')
           True
-          >>> list(bike['weekday'].iloc[::2000]) == ['Sat', 'Tues', 'Mon', 'Mon', 'Mon', 'Sun', 'Sun', 'Sat', 'Sun']
+          >>> list(bike['weekday'].iloc[::2000]) == ['Sat', 'Tue', 'Mon', 'Mon', 'Mon', 'Sun', 'Sun', 'Sat', 'Sun']
           True
           >>> list(bike['workingday'].iloc[::2000]) == ['no', 'yes', 'yes', 'yes', 'yes', 'no', 'no', 'no', 'no']
           True
