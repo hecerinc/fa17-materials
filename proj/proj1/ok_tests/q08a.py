@@ -1,13 +1,17 @@
 
 test = {
-  'name': 'q02b',
+  'name': 'q08a',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> needs_log_transformation == "inc"
+>>> isinstance(fake_counts, pd.DataFrame)
+True
+>>> 'fake_news' in fake_counts
+True
+>>> 'total' in fake_counts
 True
 
 """,

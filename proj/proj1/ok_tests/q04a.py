@@ -1,13 +1,13 @@
 
 test = {
-  'name': 'q02b',
+  'name': 'q04a',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> needs_log_transformation == "inc"
+>>> num_sources == 7
 True
 
 """,
