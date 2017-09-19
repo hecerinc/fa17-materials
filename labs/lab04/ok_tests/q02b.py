@@ -7,7 +7,7 @@ test = {
       'cases': [
         {
 'code': r"""
->>> needs_log_transformation == "lit"
+>>> needs_log_transformation == "inc"
 True
 
 """,
