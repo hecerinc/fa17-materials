@@ -9,35 +9,35 @@ test = {
 'code': r"""
 >>> isinstance(hash_re, str)
 True
->>> not re.search(rt_re, 'this')
+>>> re.search(rt_re, 'this') is None
 True
->>> not re.search(rt_re, 'this is the start.')
+>>> re.search(rt_re, 'this is the start.') is None
 True
->>> re.search(rt_re, 'rt hi')
+>>> re.search(rt_re, 'rt hi') is not None
 True
->>> re.search(rt_re, 'hi rt')
+>>> re.search(rt_re, 'hi rt') is not None
 True
->>> re.search(rt_re, 'rt: hello')
+>>> re.search(rt_re, 'rt: hello') is not None
 True
->>> re.search(rt_re, 'hello rt: @Sam')
+>>> re.search(rt_re, 'hello rt: @Sam') is not None
 True
->>> not re.search(hash_re, '# heya')
+>>> re.search(hash_re, '# heya') is None
 True
->>> not re.search(hash_re, '#')
+>>> re.search(hash_re, '#') is None
 True
->>> re.search(hash_re, '#heya')
+>>> re.search(hash_re, '#heya') is not None
 True
->>> re.search(hash_re, '#h')
+>>> re.search(hash_re, '#h') is not None
 True
->>> re.search(hash_re, 'ds100 is #goals')
+>>> re.search(hash_re, 'ds100 is #goals') is not None
 True
->>> not re.search(hash_re, 'ds100 is # goals')
+>>> re.search(hash_re, 'ds100 is # goals') is None
 True
->>> re.search(hash_re, 'http://google.com')
+>>> re.search(hash_re, 'http://google.com') is not None
 True
->>> re.search(hash_re, 'https://google.com')
+>>> re.search(hash_re, 'https://google.com') is not None
 True
->>> re.search(hash_re, 'hihttphello')
+>>> re.search(hash_re, 'hihttphello') is not None
 True
 >>> 
 >>> isinstance(hash_or_link, pd.DataFrame)

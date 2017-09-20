@@ -9,17 +9,17 @@ test = {
 'code': r"""
 >>> isinstance(punct_re, str)
 True
->>> not re.search(punct_re, 'this')
+>>> re.search(punct_re, 'this') is None
 True
->>> not re.search(punct_re, 'this is ok')
+>>> re.search(punct_re, 'this is ok') is None
 True
->>> not re.search(punct_re, 'this is\nok')
+>>> re.search(punct_re, 'this is\nok') is None
 True
->>> re.search(punct_re, 'this is not ok.')
+>>> re.search(punct_re, 'this is not ok.') is not None
 True
->>> re.search(punct_re, 'this#is#ok')
+>>> re.search(punct_re, 'this#is#ok') is not None
 True
->>> re.search(punct_re, 'this^is ok')
+>>> re.search(punct_re, 'this^is ok') is not None
 True
 >>> trump['no_punc'].loc['907588803161939968'] == 'fascinating to watch people writing books and major articles about me and yet they know nothing about me  amp  have zero access   fake news '
 True
