@@ -17,8 +17,6 @@ True
 True
 >>> 'terrible' in top_20.index
 True
->>> 'let'      in top_20.index
-True
 >>> 'russian'  in top_20.index
 True
 >>> 'story'    in top_20.index
