@@ -1,6 +1,6 @@
 {
-   "consumer_key": "sSS5plyaeMFZU6WMUuGYdKnBz",
-   "consumer_secret":  "LCFHcN1LXiUK9IfnvcNjDrmV4Q1jM9ZJqWzt2wAl3Bw3wHkJdL",
-   "access_token": "337026232-mMFkLueoUjLbv4xfwFLBb4JChJlofx2G8WFzsyNe",
-   "access_token_secret": "BzqBXREYZQ68WeVyfHTH7GAmQBIO7xDQ2LLjxH3b2bnvH"
+   "consumer_key": "<your Consumer Key here>",
+   "consumer_secret":  "<your Consumer Secret here>",
+   "access_token": "<your Access Token here>",
+   "access_token_secret": "<your Access Token Secret here>"
 }
