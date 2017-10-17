@@ -1,13 +1,19 @@
 
 test = {
-  'name': 'q05',
+  'name': 'q02c',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> (np.allclose(left_endpoint, np.array([ 2.44691185,  2.17881283,  2.06389856,  2.03693334,  1.98397152, 1.97189622])) )
+>>> abs_loss(2, 1) == 1
+True
+>>> abs_loss(-2, 1) == 3
+True
+>>> abs_loss(1, -3) == 4 
+True
+>>> np.linalg.norm(abs_loss(np.array([1,2]), np.array([-3,3])) - np.array([4, 1]), ord=1) == 0.0
 True
 
 """,

@@ -1,13 +1,15 @@
 
 test = {
-  'name': 'q05',
+  'name': 'q01a',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> (np.allclose(left_endpoint, np.array([ 2.44691185,  2.17881283,  2.06389856,  2.03693334,  1.98397152, 1.97189622])) )
+>>> model(1.0, 2.0) == 2.0
+True
+>>> np.all(model(3.0, np.array([4.0, 5.0])) == 3.0 * np.array([4.0, 5.0]))
 True
 
 """,

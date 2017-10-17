@@ -1,13 +1,19 @@
 
 test = {
-  'name': 'q05',
+  'name': 'q02a',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> (np.allclose(left_endpoint, np.array([ 2.44691185,  2.17881283,  2.06389856,  2.03693334,  1.98397152, 1.97189622])) )
+>>> squared_loss(2, 1) == 1
+True
+>>> squared_loss(2, 0) == 4 
+True
+>>> squared_loss(5, 1) == 16
+True
+>>> np.sum((squared_loss(np.array([5, 6]), np.array([1, 1])) - np.array([16, 25]))**2) == 0.0
 True
 
 """,
