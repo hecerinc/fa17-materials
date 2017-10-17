@@ -1,0 +1,15 @@
+{
+    "endpoint": "cal/ds100/fa17/REPLACEME",
+    "name": "REPLACEME",
+    "protocols": [
+        "file_contents",
+        "grading",
+        "backup"
+    ],
+    "src": [
+        "REPLACEME.ipynb"
+    ],
+    "tests": {
+        "ok_tests/q*.py": "ok_test"
+    }
+}
