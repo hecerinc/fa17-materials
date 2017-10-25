@@ -9,8 +9,6 @@ test = {
 'code': r"""
 >>> np.allclose(conf_interval_exact, (-18/7, 88/7))
 True
->>> np.allclose(conf_interval_exact[1] - conf_interval_sim[1], 0.0)
-True
 
 """,
           'hidden': False,
