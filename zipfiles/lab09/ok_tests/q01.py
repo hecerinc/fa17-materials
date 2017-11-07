@@ -1,13 +1,16 @@
 
 test = {
-  'name': 'q02b',
+  'name': 'q01',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> loss.dtype == np.dtype('float64') 
+>>> d = pd.read_csv('q01.csv')
+>>> len(d) == 505
+True
+>>> d["value"].sum() == 509040
 True
 
 """,

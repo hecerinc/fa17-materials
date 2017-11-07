@@ -1,19 +1,20 @@
 
 test = {
-  'name': 'q02a',
+  'name': 'q06',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
 'code': r"""
->>> squared_loss(2, 1) == 1
+>>> d = pd.read_csv('q06.csv')
+>>> len(d) == 213
 True
->>> squared_loss(2, 0) == 4 
+>>> list(d["word"][:10]) == ['spark', 'the', 'to', 'for', 'run', 'and', 'apache', 'a', 'org', 'building']
 True
->>> squared_loss(5, 1) == 16
+>>> list(d["count"][:10]) == [29, 23, 16, 13, 13, 11, 10, 9, 8, 8]
 True
->>> np.sum((squared_loss(np.array([5, 6]), np.array([1, 1])) - np.array([16, 25]))**2) == 0.0
+>>> d["count"].sum() == 513
 True
 
 """,
