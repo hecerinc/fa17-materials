@@ -20,8 +20,6 @@ True
 True
 >>> connection.execute("select SUM(row_id) from design where trial_id = 3").fetchall() == [(120786,)]
 True
->>> connection.close()
->>> connection = engine.connect()
 
 """,
           'hidden': False,

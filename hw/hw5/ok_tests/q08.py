@@ -19,8 +19,6 @@ True
 >>> q2 = "select sum(transaction_amt) from joined where trial_id = 2 group by cmte_nm order by cmte_nm"
 >>> res1 != connection.execute(q2).fetchall()
 True
->>> connection.close()
->>> connection = engine.connect()
 
 """,
           'hidden': False,
