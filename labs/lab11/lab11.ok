@@ -1,0 +1,15 @@
+{
+    "endpoint": "cal/ds100/fa17/lab11",
+    "name": "Lab 11",
+    "protocols": [
+        "file_contents",
+        "grading",
+        "backup"
+    ],
+    "src": [
+        "lab11.ipynb"
+    ],
+    "tests": {
+        "ok_tests/q*.py": "ok_test"
+    }
+}
