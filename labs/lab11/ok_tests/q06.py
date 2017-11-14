@@ -7,7 +7,7 @@ test = {
       'cases': [
         {
 'code': r"""
->>> np.abs(test_error - 24.98372270187488) < 1e-3
+>>> np.abs(final_mse - 24.98372270187488) < 1e-3
 True
 
 """,
